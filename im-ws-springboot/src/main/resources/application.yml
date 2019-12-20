@@ -1,0 +1,17 @@
+server:
+  port: 10008
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/im_ws_springboot
+    username: root
+    password: root
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+netty:
+  port: 8000  # 默认端口为8000，此处可以修改, 最高修改优先级为启动jar包所传递的参数
